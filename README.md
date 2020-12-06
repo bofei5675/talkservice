@@ -3,11 +3,10 @@
 
 现在提供的服务包括
 * 直接进行比较， 完全一样输出0，不同输出1
-* 编辑距离（Edit distance）
-* Jaccard Similarity（中文切词后）
-* SimHash: 哈希后比对相似度
+* 编辑距离（Edit distance）, 0为完全一样，越大区别越大
+* Jaccard Similarity（中文切词后）, 1为完全一样，0为完全不同
+* SimHash: 哈希后比对相似度， 1为完全一样，0为完全不同
 
----
 # 使用方式
 ## Setup
 安装golang 1.13, 并且安装依赖
