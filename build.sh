@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RUN_NAME="lark.bofei.test"
+RUN_NAME="data.service.talkapp"
 
 export GO111MODULE=on
 go mod download

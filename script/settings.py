@@ -1,7 +1,7 @@
 # coding: utf-8
 
-PRODUCT="lark"
-SUBSYS="bofei"
-MODULE="test"
+PRODUCT="data"
+SUBSYS="service"
+MODULE="talkapp"
 
 APP_TYPE="binary"

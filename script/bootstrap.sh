@@ -48,15 +48,6 @@ SVC_NAME=${PRODUCT}.${SUBSYS}.${MODULE}
 
 BinaryName=${PRODUCT}.${SUBSYS}.${MODULE}
 
-export GIN_LOG_DIR=$RUNTIME_LOG_ROOT
-export PSM=$SVC_NAME
-CONF_DIR=$CURDIR/conf/
-
-args="-psm=$SVC_NAME -conf-dir=$CONF_DIR -log-dir=$GIN_LOG_DIR"
-if [ "X$PORT" != "X" ]; then
-    args+=" -port=$PORT"
-fi
-
 echo "$CURDIR/bin/${BinaryName} $args"
 
 exec $CURDIR/bin/${BinaryName} $args
